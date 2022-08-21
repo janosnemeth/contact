@@ -1,0 +1,218 @@
+body{
+    background: #F4F3F5 0% 0% no-repeat padding-box; 
+    font-family: Montserrat;  
+   }
+a{
+    text-decoration: none;
+    color:  #F4F3F5
+}
+
+
+/*----------HEADER-----------------------*/
+
+.menubar {
+    display: grid;
+    grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+    grid-template-areas: ". logo . . . . . home about pricing contact .";
+    height: 80px;
+    background: #6200EA 0% 0% no-repeat padding-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    }
+ 
+.logo {
+    grid-area: logo;
+    place-self: center;
+    color: #FFFFFF;
+}
+
+.item{
+    color:  #F4F3F5;
+    letter-spacing: 2.4px;
+    place-self: center;
+    opacity: 0.65;
+    font-size: 13px;
+}
+.item:hover {
+    color: #F4F3F5; 
+    border: 0px solid #FFFFFF;
+    border-bottom-width: 2px;
+    border-bottom-color: #F4F3F5;
+    opacity: 1;
+    padding: 25px 0 25px 0;
+}
+
+.home{ grid-area: home;}
+.about{ grid-area: about;}
+.pricing{ grid-area: pricing;}
+.contact{ grid-area: contact;}
+
+/*---------Containers defineted------------------------*/
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 5fr 5fr 2fr;
+    grid-template-areas: ". left-container rigth-container .";
+    grid-template-rows: auto;
+    column-gap: 30px;
+}
+
+.left-container{
+    grid-area: left-container;
+    /*width: 540px;*/
+   /* height: 800px;*/
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+}
+.rigth-container{
+    grid-area: rigth-container;
+    /*width: 540px;*/
+    /*height: 800px;*/
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+}
+
+
+/*--------------------------Contac us Conatiner-----------------------*/
+
+h2{
+    
+    font-size: 40px;
+    text-align: left;
+    color: #211138;
+    }
+p{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.submit{
+    grid-column: 1 / 2;
+    height: 30px;
+    width: 480px;
+    font-size: 15px;
+    color:  #2111;
+    letter-spacing: 2.4px;
+    place-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    background: #6200EA 0% 0% no-repeat padding-box;
+    border: 2px solid #6200EA;
+    border-radius: 24px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.submit:hover{
+    background-color: #B2ACBA;
+}
+
+ #name, #email, #message {
+    grid-column: 1 / 2;
+    height: 60px;
+   
+    font-size: 15px;
+    color:  #211138;
+    letter-spacing: 2.4px;
+    
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: left;
+    padding-left: 50px;
+    background: #F4F3F5 0% 0% no-repeat padding-box;
+    border:0px;
+    
+    margin-top: 20px;
+}
+
+#message{
+    height: 120px;
+}
+
+#name:focus, #email:focus, #message:focus {
+    border: 0px solid #F4F3F5;
+    border-bottom-width: 4px;
+    border-bottom-color: #6200EA;
+    outline: 0;
+   
+      }
+
+/*----------------LEFT container------------------------*/
+
+.purple{
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 2.4px;
+    color: #6200EA;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.address{
+    font-size: 12px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+  }
+  
+  li {
+    margin-top: 10px;
+    
+    background-color: #6200EA;
+    display:          inline-block; 
+    width:            28px; 
+    height:           28px; 
+    padding:          12px; 
+    border-radius:    50%; 
+    margin-right:     10px;
+    background-color: #6200ea;
+    text-align:       center;
+    color:          #ffffff;
+    font-size:      16px;
+    
+  }
+  
+
+
+
+
+
+
+
+/*----------footer-----------------------*/
+footer{
+    height: 40px;
+    font-family: Montserrat;
+    letter-spacing: 2.4px;
+    font-size: 15px;
+    text-align: center;
+    color: #B2ACBA;
+    text-transform: uppercase;
+    padding: 33px 0 32px 0;
+    background: #211138 0% 0% no-repeat padding-box;
+}
+
+.footer-name {
+    color: #6200EA;
+}
